@@ -22,9 +22,9 @@
             <div class="header-logo wow fadeInUp"><a href="<?php echo esc_url(home_url('')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="極楽亭"></a></div>
             <?php endif; ?>
             <ul class="header-list is-pc is-tab wow fadeInUp">
-                <li class="header-item"><a href="<?php esc_url(home_url('/')); ?>" class="common-link">宿泊予約</a></li>
-                <li class="header-item"><a href="<?php esc_url(home_url('/')); ?>" class="common-link">観光情報</a></li>
-                <li class="header-item"><a href="<?php esc_url(home_url('/')); ?>" class="common-link">よくあるご質問</a></li>
+                <li class="header-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="common-link">宿泊予約</a></li>
+                <li class="header-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="common-link">観光情報</a></li>
+                <li class="header-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="common-link">よくあるご質問</a></li>
                 <li class="header-item"><a href="<?php echo home_url('contact'); ?>" class="common-link">お問い合わせ</a></li>
             </ul>
         </div><!--inner-->
