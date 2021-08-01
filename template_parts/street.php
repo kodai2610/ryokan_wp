@@ -1,0 +1,1 @@
+<div class="street"><img src="<?php echo get_template_directory_uri(); ?>/image/street.png" alt="ストリート"></div>

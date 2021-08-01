@@ -1,0 +1,32 @@
+/* 全ページ共通 */
+@import "common/init";
+@import "common/header";
+@import 'common/footer';
+@import 'common/common';
+/* index.html用 */
+@import 'index/top';
+@import 'index/features';
+@import 'index/plan';
+@import 'index/blog';
+@import 'index/faq';
+
+/* その他用 */
+@import 'others/archive';
+@import 'others/single';
+@import 'others/contact';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

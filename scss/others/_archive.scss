@@ -1,0 +1,143 @@
+.blog-ar {
+  padding-bottom: 120px;
+  @include mq('sp') {
+    padding-bottom: 60px;
+  }
+}
+
+
+
+.ar-inner {
+  width: 1232x; // 1160 + 36 * 2
+}
+
+.blog-ar-items {
+  margin-top: 56px;
+}
+
+.blog-ar-item {
+  & + & {
+    margin-top: 50px;
+    @include mq('sp') {
+      margin-top: 60px;
+    }
+  }
+}
+
+.blog-ar-link {
+  display: block;
+  @include mq('pc') {
+    display: flex;  
+  }
+  &:hover .blog-ar-item-title span {
+    background: transparent;
+  }
+}
+
+
+.blog-ar-img {
+  width: 254px;
+  position: relative;
+  @include mq('sp') {
+    width: 100%;
+  }
+}
+
+
+.blog-ar-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 30px;
+  background-color: cl(primary);
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.blog-ar-content {
+  @include mq('pc') {
+    width: calc(100% - 254px);
+    padding-left: 30px;
+  }
+  @include mq('sp') {
+    margin-top: 10px;
+  }
+  p {
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: ( 26 / 24);
+
+    @include mq('sp') {
+      display: none!important;
+    }
+  }
+}
+
+.blog-ar-time {
+  font-size: 16px;
+  display: block;
+}
+
+.blog-ar-item-title {
+  font-size: 28px;
+  line-height: ( 26 / 28);
+  margin-top: 13px;
+  @include mq('sp') {
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  span {
+    display: inline;
+    background: linear-gradient(transparent 97%, cl(white) 0%);
+    transition: all .3s ease 0s;
+  }
+} 
+
+
+//pagination 
+
+.pagination {
+  margin-top: 75px;
+  text-align: center;
+}
+
+.page-numbers {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  border: 2px solid #B8860B;
+  font-family: 'YuGothic', sans-serif;
+  transition: all .3s ease 0s;
+
+  &.current,&:hover {
+    background-color: #B8860B;
+  }
+
+  &.dots {
+    border: none;
+    font-size: 48px;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    
+  }
+  
+  & + &, &.last {
+    margin-left: 20px;
+  }
+}
+
+.page-between {
+  margin-left: 20px;
+}
+
+
+
+
+
+

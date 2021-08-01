@@ -1,0 +1,53 @@
+.footer {
+  padding: 60px 0 12px;
+  background-color: cl(primary);
+  border-top: 1px solid #6E6E6E;
+}
+
+.footer-list {
+  @include mq('pc') {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer-item {
+  @include mq('sp') {
+    text-align: center;
+  }
+
+  & + & {
+    @include mq('pc') {
+      margin-left: 40px;
+    }
+
+    @include mq('sp') {
+      margin-top: 16px;
+    }
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+}
+
+.footer-logo {
+  width: 188px;
+  margin: 58px auto 0;
+
+  @include mq('sp') {
+    width: 150px;
+  }
+} 
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: ( 27 / 16);
+  font-family: 'Hiragino Mincho ProN W3',"YuMincho","MS PMincho", serif;
+}
+
+
+
